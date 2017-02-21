@@ -26,6 +26,14 @@
             "default": "{}",
             "optional": true,
             "nullable": ""
+          },
+          {
+            "name": "options.scope",
+            "type": "string",
+            "description": "Id scope name",
+            "default": "",
+            "optional": true,
+            "nullable": ""
           }
         ],
         "examples": []
@@ -102,30 +110,6 @@
       "returns": {
         "type": "ClayId",
         "description": ""
-      }
-    },
-    {
-      "name": "fromJSON",
-      "access": "",
-      "virtual": false,
-      "description": "Create instance from json",
-      "parameters": [
-        {
-          "name": "value",
-          "type": [
-            "string",
-            "Object"
-          ],
-          "description": "",
-          "default": "",
-          "optional": "",
-          "nullable": ""
-        }
-      ],
-      "examples": [],
-      "returns": {
-        "type": "ClayId",
-        "description": "Clay id instance"
       }
     },
     {
