@@ -35,8 +35,7 @@ module.exports = {
       let functions = byName(jsdoc[ 'functions' ], { wrapper: asFunc })
       let {
         create,
-        newIdString,
-        fromJSON
+        newIdString
       } = functions
       return {
         classes: [
@@ -44,9 +43,7 @@ module.exports = {
         ].filter(Boolean),
         functions: [
           create,
-          newIdString,
-          fromJSON
-
+          newIdString
         ].filter(Boolean)
       }
     }
