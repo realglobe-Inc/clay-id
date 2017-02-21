@@ -98,7 +98,7 @@ let id01 = clayId()
 API
 ---------
 
-# clay-id@1.0.0
+# clay-id@1.1.0
 
 Id generator for ClayDB
 
@@ -107,7 +107,7 @@ Id generator for ClayDB
   + [newIdString()](#clay-id-function-new-id-string)
   + [fromJSON(value)](#clay-id-function-from-j-s-o-n)
 + [ClayId](clay-id-classes) Class
-  + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
+  + [new ClayId(id, options)](#clay-id-classes-clay-id-constructor)
   + [id.is(id)](#clay-id-classes-clay-id-is)
   + [id.toString()](#clay-id-classes-clay-id-toString)
   + [id.toJSON()](#clay-id-classes-clay-id-toJSON)
@@ -150,13 +150,14 @@ Id generator
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
 
-### new ClayId(id)
+### new ClayId(id, options)
 
 Constructor of ClayId class
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| id | string |  |
+| id | string | Id string |
+| options | Object | Optional settings |
 
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>

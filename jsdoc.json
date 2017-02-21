@@ -14,8 +14,16 @@
           {
             "name": "id",
             "type": "string",
-            "description": "",
+            "description": "Id string",
             "default": "newIdString()",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "options",
+            "type": "Object",
+            "description": "Optional settings",
+            "default": "{}",
             "optional": true,
             "nullable": ""
           }
