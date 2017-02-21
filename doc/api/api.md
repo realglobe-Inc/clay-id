@@ -6,7 +6,7 @@ Id generator for ClayDB
   + [create(args)](#clay-id-function-create)
   + [newIdString()](#clay-id-function-new-id-string)
 + [ClayId](clay-id-classes) Class
-  + [new ClayId(id, options)](#clay-id-classes-clay-id-constructor)
+  + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
   + [id.is(id)](#clay-id-classes-clay-id-is)
   + [id.toString()](#clay-id-classes-clay-id-toString)
   + [id.toJSON()](#clay-id-classes-clay-id-toJSON)
@@ -39,15 +39,13 @@ Id generator
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
 
-### new ClayId(id, options)
+### new ClayId(id)
 
 Constructor of ClayId class
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| id | string | Id string |
-| options | Object | Optional settings |
-| options.scope | string | Id scope name |
+| id | string,object | Id string |
 
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>
