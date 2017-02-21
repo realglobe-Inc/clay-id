@@ -2,6 +2,7 @@
   "name": "clay-id",
   "version": "1.0.0",
   "description": "Id generator for ClayDB",
+  "browser": "shim/browser",
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
