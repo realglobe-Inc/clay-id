@@ -50,6 +50,14 @@ describe('clay-id', function () {
       id03.is(id01)
     }
   }))
+
+  it('Type variation', () => co(function * () {
+    assert.throws(() => new ClayId(null))
+    assert.ok(new ClayId(true))
+    assert.ok(new ClayId(false))
+    assert.ok(new ClayId(''))
+    assert.ok(new ClayId(123))
+  }))
 })
 
 /* global describe, before, after, it */
