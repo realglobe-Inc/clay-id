@@ -30,22 +30,24 @@ describe('clay-id', function () {
 
   it('Scoped', () => co(function * () {
     assert.equal(
-      new ClayId('foo', { scope: 'hoge' }).toString(),
-      new ClayId('foo', { scope: 'hoge' }).toString()
+      new ClayId({ id: 'foo', scope: 'hoge' }).toString(),
+      new ClayId({ id: 'foo', scope: 'hoge' }).toString()
     )
 
     assert.equal(
-      new ClayId('foo', { scope: 'hoge' }).toString(),
-      new ClayId((new ClayId('foo', { scope: 'hoge' })).toString()).toString()
+      new ClayId({ id: 'foo', scope: 'hoge' }).toString(),
+      new ClayId((new ClayId({ id: 'foo', scope: 'hoge' })).toString()).toString()
     )
 
     {
-      let id01 = new ClayId('foo', { scope: 'hoge' })
+      let id01 = new ClayId({ id: 'foo', scope: 'hoge' })
       assert.equal(id01.id, 'foo')
       assert.equal(id01.scope, 'hoge')
       assert.equal(id01.toString(), '@hoge/foo')
       let id02 = new ClayId('@hoge/foo')
       id01.is(id02)
+      let id03 = new ClayId(id02)
+      id03.is(id01)
     }
   }))
 })

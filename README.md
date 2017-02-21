@@ -105,7 +105,6 @@ Id generator for ClayDB
 + Functions
   + [create(args)](#clay-id-function-create)
   + [newIdString()](#clay-id-function-new-id-string)
-  + [fromJSON(value)](#clay-id-function-from-j-s-o-n)
 + [ClayId](clay-id-classes) Class
   + [new ClayId(id, options)](#clay-id-classes-clay-id-constructor)
   + [id.is(id)](#clay-id-classes-clay-id-is)
@@ -129,16 +128,6 @@ Create a ClayId instance
 ### newIdString() -> `string`
 
 Generate a new id string
-<a class='md-heading-link' name="clay-id-function-from-j-s-o-n" ></a>
-
-### fromJSON(value) -> `ClayId`
-
-Create instance from json
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| value | string,Object |  |
-
 
 
 <a class='md-heading-link' name="clay-id-classes"></a>
@@ -158,6 +147,7 @@ Constructor of ClayId class
 | ----- | --- | -------- |
 | id | string | Id string |
 | options | Object | Optional settings |
+| options.scope | string | Id scope name |
 
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>
