@@ -1,0 +1,136 @@
+{
+  "classes": [
+    {
+      "name": "ClayId",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "ClayId",
+        "description": "Id generator",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "",
+            "default": "newIdString()",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "is",
+          "access": "",
+          "virtual": false,
+          "description": "Compare to another id",
+          "parameters": [
+            {
+              "name": "id",
+              "type": [
+                "string",
+                "ClayId"
+              ],
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "boolean",
+            "description": ""
+          }
+        },
+        {
+          "name": "toString",
+          "access": "",
+          "virtual": false,
+          "description": "Convert to string",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "String representation"
+          }
+        },
+        {
+          "name": "toJSON",
+          "access": "",
+          "virtual": false,
+          "description": "Convert to json (Called from JSON.stringify)",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "JSON representation"
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a ClayId instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "ClayId",
+        "description": ""
+      }
+    },
+    {
+      "name": "fromJSON",
+      "access": "",
+      "virtual": false,
+      "description": "Create instance from json",
+      "parameters": [
+        {
+          "name": "value",
+          "type": [
+            "string",
+            "Object"
+          ],
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "ClayId",
+        "description": "Clay id instance"
+      }
+    },
+    {
+      "name": "newIdString",
+      "access": "",
+      "virtual": false,
+      "description": "Generate a new id string",
+      "parameters": [],
+      "examples": [],
+      "returns": {
+        "type": "string",
+        "description": "Generated string"
+      }
+    }
+  ]
+}

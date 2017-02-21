@@ -20,9 +20,13 @@ describe('clay-id', function () {
   }))
 
   it('Clay id', () => co(function * () {
-    let clayId = new ClayId()
-    assert.ok(clayId.generate())
-    assert.notEqual(clayId.generate(), clayId.generate())
+    assert.ok(new ClayId().toString())
+    assert.ok(new ClayId().toJSON())
+    assert.notEqual(new ClayId().toString(), new ClayId().toString())
+
+    assert.ok(new ClayId('foo').is(new ClayId('foo')))
+    assert.ok(new ClayId('foo').is('foo'))
+
   }))
 })
 
