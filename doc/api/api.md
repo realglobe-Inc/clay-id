@@ -1,4 +1,4 @@
-# clay-id@1.1.0
+# clay-id@1.1.1
 
 Id generator for ClayDB
 
