@@ -98,7 +98,7 @@ let id01 = clayId()
 API
 ---------
 
-# clay-id@1.1.1
+# clay-id@1.1.2
 
 Id generator for ClayDB
 
