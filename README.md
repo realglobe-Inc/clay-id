@@ -105,7 +105,7 @@ Id generator for ClayDB
 + Functions
   + [create(args)](#clay-id-function-create)
   + [newIdString()](#clay-id-function-new-id-string)
-+ [ClayId](clay-id-classes) Class
++ [`ClayId`](#clay-id-classes) Class
   + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
   + [id.is(id)](#clay-id-classes-clay-id-is)
   + [id.toString()](#clay-id-classes-clay-id-toString)
@@ -132,9 +132,11 @@ Generate a new id string
 
 <a class='md-heading-link' name="clay-id-classes"></a>
 
-## ClayId Class
+## `ClayId` Class
 
 Id generator
+
+
 
 
 <a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
