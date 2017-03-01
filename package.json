@@ -1,6 +1,6 @@
 {
   "name": "clay-id",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Id generator for ClayDB",
   "browser": "shim/browser",
   "main": "lib",
