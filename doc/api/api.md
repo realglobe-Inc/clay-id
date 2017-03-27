@@ -1,15 +1,15 @@
-# clay-id@2.0.1
+# clay-id@2.1.0
 
 Id generator for ClayDB
 
 + Functions
   + [create(args)](#clay-id-function-create)
   + [newIdString()](#clay-id-function-new-id-string)
-+ [`ClayId`](#clay-id-classes) Class
-  + [new ClayId(id)](#clay-id-classes-clay-id-constructor)
-  + [id.is(id)](#clay-id-classes-clay-id-is)
-  + [id.toString()](#clay-id-classes-clay-id-toString)
-  + [id.toJSON()](#clay-id-classes-clay-id-toJSON)
++ [`ClayId`](#clay-id-class) Class
+  + [new ClayId(id)](#clay-id-class-clay-id-constructor)
+  + [id.is(id)](#clay-id-class-clay-id-is)
+  + [id.toString()](#clay-id-class-clay-id-toString)
+  + [id.toJSON()](#clay-id-class-clay-id-toJSON)
 
 ## Functions
 
@@ -30,7 +30,7 @@ Create a ClayId instance
 Generate a new id string
 
 
-<a class='md-heading-link' name="clay-id-classes"></a>
+<a class='md-heading-link' name="clay-id-class"></a>
 
 ## `ClayId` Class
 
@@ -39,7 +39,7 @@ Id generator
 
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-constructor" ></a>
+<a class='md-heading-link' name="clay-id-class-clay-id-constructor" ></a>
 
 ### new ClayId(id)
 
@@ -50,7 +50,7 @@ Constructor of ClayId class
 | id | string,object | Id string |
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-is" ></a>
+<a class='md-heading-link' name="clay-id-class-clay-id-is" ></a>
 
 ### id.is(id) -> `boolean`
 
@@ -61,13 +61,13 @@ Compare to another id
 | id | string,ClayId |  |
 
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-toString" ></a>
+<a class='md-heading-link' name="clay-id-class-clay-id-toString" ></a>
 
 ### id.toString() -> `string`
 
 Convert to string
 
-<a class='md-heading-link' name="clay-id-classes-clay-id-toJSON" ></a>
+<a class='md-heading-link' name="clay-id-class-clay-id-toJSON" ></a>
 
 ### id.toJSON() -> `string`
 

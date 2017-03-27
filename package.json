@@ -1,6 +1,6 @@
 {
   "name": "clay-id",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Id generator for ClayDB",
   "browser": "shim/browser",
   "main": "lib",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-id#readme",
   "dependencies": {
-    "clay-constants": "^2.5.1",
+    "clay-constants": "^2.9.1",
     "co": "^4.6.0",
     "uuid": "^3.0.1"
   },
@@ -42,7 +42,7 @@
     "filecopy": "^3.0.1",
     "injectmock": "^2.0.0",
     "request": "^2.81.0",
-    "sg-templates": "^1.3.2",
+    "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",
     "writeout": "^2.1.0"
   },
