@@ -94,94 +94,20 @@ let id01 = clayId()
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/guides/03.API.md.hbs" Start -->
+<!-- Section from "doc/guides/10.API Guide.md.hbs" Start -->
 
-<a name="section-doc-guides-03-a-p-i-md"></a>
+<a name="section-doc-guides-10-a-p-i-guide-md"></a>
 
-API
----------
+API Guide
+-----
 
-# clay-id@2.1.0
-
-Id generator for ClayDB
-
-+ Functions
-  + [create(args)](#clay-id-function-create)
-  + [newIdString()](#clay-id-function-new-id-string)
-+ [`ClayId`](#clay-id-class) Class
-  + [new ClayId(id)](#clay-id-class-clay-id-constructor)
-  + [id.is(id)](#clay-id-class-clay-id-is)
-  + [id.toString()](#clay-id-class-clay-id-toString)
-  + [id.toJSON()](#clay-id-class-clay-id-toJSON)
-
-## Functions
-
-<a class='md-heading-link' name="clay-id-function-create" ></a>
-
-### create(args) -> `ClayId`
-
-Create a ClayId instance
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| args | * |  |
-
-<a class='md-heading-link' name="clay-id-function-new-id-string" ></a>
-
-### newIdString() -> `string`
-
-Generate a new id string
++ [clay-id@2.1.0](./doc/api/api.md)
+  + [create(args)](./doc/api/api.md#clay-id-function-create)
+  + [newIdString()](./doc/api/api.md#clay-id-function-new-id-string)
+  + [ClayId](./doc/api/api.md#clay-id-class)
 
 
-<a class='md-heading-link' name="clay-id-class"></a>
-
-## `ClayId` Class
-
-Id generator
-
-
-
-
-<a class='md-heading-link' name="clay-id-class-clay-id-constructor" ></a>
-
-### new ClayId(id)
-
-Constructor of ClayId class
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| id | string,object | Id string |
-
-
-<a class='md-heading-link' name="clay-id-class-clay-id-is" ></a>
-
-### id.is(id) -> `boolean`
-
-Compare to another id
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| id | string,ClayId |  |
-
-
-<a class='md-heading-link' name="clay-id-class-clay-id-toString" ></a>
-
-### id.toString() -> `string`
-
-Convert to string
-
-<a class='md-heading-link' name="clay-id-class-clay-id-toJSON" ></a>
-
-### id.toJSON() -> `string`
-
-Convert to json (Called from JSON.stringify)
-
-
-
-
-
-
-<!-- Section from "doc/guides/03.API.md.hbs" End -->
+<!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
 
 
 <!-- Sections Start -->
