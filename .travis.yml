@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+ - npm i npm-cli-login -g
+ - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+ - npm who
 install:
 - npm install jsdoc -g
 - npm install
@@ -20,4 +16,4 @@ script:
 after_success:
 - ./ci/travis/publish.js
 env:
-  secure: "AfgGzDW2L24U1TOAmi3W7eK8fJ3jmMMR0rlJGmAjTrvtGO3MXV399G0FB/s7wKfLlt0JgZVpzwdvcNzhl7ivMdTi9XWvYwlYlqRp61Phl23lAiu/tEbL7MRIEcLmHaLxQO+8E2JytAzV7SXrDm7CUwwPD6nKtELb8B31h1DDosKwBYBFIHUgvpSPMhyMC3Y3KwCZ+BulIW7kmQwz3x1gKK4T1Y4aYG4qAaUnWsAhMK9w1KnYNYygAXGL5BhaN4INmyNKyuPdhnJ8vTlEtjAVrsx9RbjocgdsM3cK6R4cjQIJZ5G6zAHT21aDq/IQxHg6tTObhk5Sy5b52FjTmUK73S+uEFdBeIYV6F3BCVOeCys+vgev0KbplPTv17nkffFPlJXonFewes3CBX4xaOXC/G+3TOyj0iEUJxCCjTC+NUs1tiQxdU0Xl/xBoYh2PQhh7zb/lXZO5K0B6tPg179o7RMKGVSKYEMqbjJv9U9ngL6yhYpaZ1ZpBXFGvEpTksQQp8VShHhJw3fUMgyxmbVLsl5yGH9Jk82NztbmHF7dvlhADAXqd1f3mv/biyPKzCuX6cj7pqKc/t2/aNayf4edwS7rVZc+iIejRw1NAgsvgQumlE6ztiDfRRvcew0crPokZwWFvuC/Cp3nesPBDnQjFwUMNdESx/tf8ZOat71Cxew="
+  secure: "MH6grXmrZTybyyHMfmiGezix9WIX2y8CDNTI0jB161bQKNbeNJ7T+VINKlvRztEwjNat5aUBENVYZuPnsh+eru9k3zO9oDiZt95tdMXjLjuAHrmqlLtJFt1XIkNBLCJz6jVxQNGSW+6UaVLfhlvXs6HbDh+6PiW5UdHq/oiZmzOhjFo8z6e37MFafS2WbpG2q7YfJ6A4wE9yYxLJRAQdotsxFpxEG2UOC7/kTMgNzKQzsYipqmd2+n69N502tt9RF89Tx2d/Zrt661sGAKubP9H2hqbeAcxEBYaINovEicZKq42/r9ThBbYb86298ce+X4+JMq1fIer++HTV7ZiM0vavmjqgfVKeeWLsv12WtchPts0r5ZSnlK6pJc5FO5+EsPK7wKnFs1pImnP1oeqIVVA9mJTbSFEhHPaQAy1QaiM3NDFdwEUXBzHX0lp/kijDKwPA0Zrg31pGm1NeYi6a9uEi4Y1DtUlYFkvL9MXihENkgptAkoPFnFkt2y+A63y08pgtCe4SDW+/030h+1NEvwq55ozbSWj6P5dexEhVDqN88VyBqMprZeKBjgf8GywV4RIokZ87RXSwo5gb6hlXvRnOZMXsU1glrMwEY2olDueXDKQ9Lv+QcNjAMXnsnqOo+v/Suas65ra7dQDHvWL0GvCH3BRLWuUwuojXY+GzQT0="
