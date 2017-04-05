@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-id#readme",
   "dependencies": {
-    "clay-constants": "^2.10.1",
+    "clay-constants": "^3.0.1",
     "co": "^4.6.0",
     "uuid": "^3.0.1"
   },
