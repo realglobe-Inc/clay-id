@@ -96,12 +96,12 @@ let id01 = clayId()
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" Start -->
 
-<a name="section-doc-guides-10-a-p-i-guide-md"></a>
+<a name="section-doc-guides-10-api-guide-md"></a>
 
 API Guide
 -----
 
-+ [clay-id@3.0.1](./doc/api/api.md)
++ [clay-id@3.0.2](./doc/api/api.md)
   + [create(args)](./doc/api/api.md#clay-id-function-create)
   + [newIdString()](./doc/api/api.md#clay-id-function-new-id-string)
   + [ClayId](./doc/api/api.md#clay-id-class)

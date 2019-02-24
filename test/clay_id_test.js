@@ -6,29 +6,20 @@
 
 const ClayId = require('../lib/clay_id.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('clay-id', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
-
-  }))
-
-  after(() => co(function * () {
-
-  }))
-
-  it('Clay id', () => co(function * () {
+  it('Clay id', () => {
     assert.ok(new ClayId().toString())
     assert.ok(new ClayId().toJSON())
     assert.notEqual(new ClayId().toString(), new ClayId().toString())
 
     assert.ok(new ClayId('foo').is(new ClayId('foo')))
     assert.ok(new ClayId('foo').is('foo'))
-  }))
+  })
 
-  it('Scoped', () => co(function * () {
+  it('Scoped', () => {
     assert.equal(
       new ClayId({ id: 'foo', scope: 'hoge' }).toString(),
       new ClayId({ id: 'foo', scope: 'hoge' }).toString()
@@ -49,15 +40,15 @@ describe('clay-id', function () {
       let id03 = new ClayId(id02)
       id03.is(id01)
     }
-  }))
+  })
 
-  it('Type variation', () => co(function * () {
+  it('Type variation', () => {
     assert.throws(() => new ClayId(null))
     assert.ok(new ClayId(true))
     assert.ok(new ClayId(false))
     assert.ok(new ClayId(''))
     assert.ok(new ClayId(123))
-  }))
+  })
 })
 
 /* global describe, before, after, it */
