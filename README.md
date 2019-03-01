@@ -101,7 +101,7 @@ let id01 = clayId()
 API Guide
 -----
 
-+ [clay-id@3.0.2](./doc/api/api.md)
++ [clay-id@3.0.3](./doc/api/api.md)
   + [create(args)](./doc/api/api.md#clay-id-function-create)
   + [newIdString()](./doc/api/api.md#clay-id-function-new-id-string)
   + [ClayId](./doc/api/api.md#clay-id-class)
